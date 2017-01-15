@@ -34,6 +34,7 @@ add	./graphite/storage-schemas.conf /var/lib/graphite/conf/storage-schemas.conf
 add	./graphite/storage-aggregation.conf /var/lib/graphite/conf/storage-aggregation.conf
 
 add     ./grafana/config.ini /etc/grafana/config.ini
+add     ./grafana/grafana.ini /etc/grafana/grafana.ini
 
 # Add system service config
 add	./nginx/nginx.conf /etc/nginx/nginx.conf
@@ -69,4 +70,3 @@ env STATSD_IPV6 0
 add ./bin/init /usr/bin/init
 
 cmd exec /usr/bin/init
-
